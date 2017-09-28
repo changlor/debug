@@ -1,1 +1,23 @@
-<!DOCTYPE html><html><head><meta content="telephone=no" name=format-detection><meta content="email=no" name=format-detection><meta charset=utf-8><title>rain</title><link href=./static/css/app.b244a56042600c3c40909729873e2670.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.b399465afa2753fd4a44.js></script><script type=text/javascript src=./static/js/vendor.dabf3cfa30a42bafc5b0.js></script><script type=text/javascript src=./static/js/app.370c13d28a405579f9ca.js></script></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>rain</title>
+  </head>
+  <body>
+    <div id="test"></div>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var test = document.getElementById('test');
+        test.innerHTML = navigator.serviceWorker;
+        // 执行注册
+        navigator.serviceWorker.register('/Worker.js').then(function(registration) {
+        
+        }).catch(function(err) {
+      
+        }); 
+      });
+    </script>
+    <script src="/test/test.js"></script>
+  </body>
+</html>
